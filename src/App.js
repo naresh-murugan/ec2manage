@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+async function  App() {
+  const data = axios.get("http://192.168.109:5000/get_det")
   return (
-    <h1></h1>
+    <h1>
+      {{data}}
+    </h1>
   );
 }
 
